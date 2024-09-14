@@ -1,0 +1,31 @@
+<nav>
+  <div class="wrapper">
+    <div class="logo">
+      <a routerLink="/"><img src="assets/images/chancoWeb.png" alt=""></a>
+    </div>
+    
+    <button (click)="toggleMenu()" class="btn menu-btn" aria-label="Toggle navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" [ngClass]="{'show': menuOpen}">
+      <li><button class="nav-button" routerLink="/" routerLinkActive="active">Inicio</button></li>
+      <li><button class="nav-button" routerLink="/news" routerLinkActive="active">Noticias</button></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Comuna</a>
+        <div class="dropdown-content">
+          <a href="#">Chanco Histórico</a>
+          <a href="#">Pladeco</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Municipal</a>
+        <div class="dropdown-content">
+          <a href="#">Alcalde</a>
+          <a href="#">Concejo Municipal</a>
+          <a href="#">Organigrama Municipal</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

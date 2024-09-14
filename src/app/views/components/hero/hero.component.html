@@ -1,0 +1,8 @@
+<div class="hero-container" *ngIf="heroImage.length > 0">
+    <img [src]="heroImage[0].imagen" alt="Hero Image" class="hero-image">
+    <div class="hero-text">
+      <h1>{{ heroImage[0].titulo }}</h1>
+      <p>{{ heroImage[0].descripcion }}</p>
+    </div>
+  </div>
+  
