@@ -1,0 +1,112 @@
+.news-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: var(--font-family-secondary);
+}
+
+.news-title {
+  margin-top: 100px;
+  font-size: var(--font-size-title);
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--color-text);
+}
+
+.news-author {
+  font-size: var(--font-size-caption);
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.news-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.share-btn, .like-btn {
+  padding: 10px 15px;
+  font-size: var(--font-size-caption);
+  border: none;
+  border-radius: var(--border-radius-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.share-btn.facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.share-btn.twitter {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.like-btn {
+  background-color: #ff3b30;
+  color: white;
+}
+
+.share-btn:hover, .like-btn:hover {
+  opacity: 0.9;
+}
+
+.news-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: var(--border-radius-primary);
+}
+
+.news-description {
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+.news-description p {
+  margin-bottom: 10px; /* Margen entre párrafos */
+}
+
+.comment-form {
+  margin-top: 40px;
+}
+
+.comment-form h2 {
+  font-size: var(--font-size-title);
+  margin-bottom: 10px;
+}
+
+.comment-form label {
+  display: block;
+  font-size: var(--font-size-caption);
+  margin-bottom: 5px;
+  color: var(--color-text);
+}
+
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: var(--font-size-caption);
+  border-radius: var(--border-radius-primary);
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  min-height: 100px;
+}
+
+.comment-form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: var(--font-size-caption);
+  border-radius: var(--border-radius-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}

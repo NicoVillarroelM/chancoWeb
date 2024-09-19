@@ -1,16 +1,25 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-news',
+  selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './news.component.html',
-  styleUrl: './news.component.css'
+  imports: [CommonModule,RouterLink],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class NewsComponent {
-  articles = [
+export class HomeComponent {
+  heroImage = [
+    { 
+      titulo: 'Bienvenido a ChancoWeb',
+      descripcion: 'Chanco es una joya costera que combina la belleza natural con una vibrante vida cultural. Con su ambiente acogedor y su riqueza en tradiciones, es un destino perfecto para aquellos que buscan una experiencia auténtica en el sur de Chile.',
+      imagen: 'assets/images/trigo1.png',
+    }
+  ]
+
+  newsList = [
     {
       id: 1,
       title: 'El SkatePark municipal de Chanco abre sus puertas con su taller para escolares',

@@ -1,0 +1,21 @@
+<div class="hero-container" *ngIf="heroImage.length > 0">
+    <img [src]="heroImage[0].imagen" alt="Hero Image" class="hero-image">
+    <div class="hero-text">
+      <h1>{{ heroImage[0].titulo }}</h1>
+      <p>{{ heroImage[0].descripcion }}</p>
+    </div>
+</div>
+
+<h1>Nuestras noticias</h1>
+<div class="band">
+  <div *ngFor="let item of newsList" class="item-{{item.id}}">
+    <a (click)="goToNewsDetail(item.id)" class="card"> 
+      <div class="thumb" [ngStyle]="{'background-image': 'url(' + item.image + ')'}"></div>
+      <article>
+        <h1>{{ item.title }}</h1>
+        <span>{{ item.date }}</span>
+      </article>
+    </a>
+  </div>
+</div>
+

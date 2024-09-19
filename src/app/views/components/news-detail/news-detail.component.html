@@ -1,0 +1,26 @@
+<div class="news-detail">
+  <h1 class="news-title">{{ news.title }}</h1>
+
+  <p class="news-author">Municipalidad de Chanco, 02 de Septiembre, 2024</p>
+
+  <div class="news-actions">
+    <button class="share-btn facebook" (click)="shareOnFacebook()">Compartir en Facebook</button>
+    <button class="share-btn twitter" (click)="shareOnTwitter()">Compartir en Twitter</button>
+    <button class="like-btn" (click)="likeNews()">Me gusta</button>
+  </div>
+
+  <img [src]="news.image" alt="{{ news.title }}" class="news-image" />
+
+  <div class="news-description">
+    <p *ngFor="let paragraph of news.description">{{ paragraph }}</p>
+  </div>  
+
+  <div class="comment-form">
+    <h2>Deja un comentario</h2>
+    <form (submit)="submitComment($event)">
+      <label for="comment">Tu comentario</label>
+      <textarea id="comment" name="comment" required></textarea>
+      <button type="submit">Enviar comentario</button>
+    </form>
+  </div>
+</div>

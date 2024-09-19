@@ -1,14 +1,9 @@
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* Estilos para el footer */
 section {
     width: 100%;
     display: inline-block;
     height: 50vh;
     text-align: center;
-    font-size: 18px;
+    font-size: var(--font-size-caption);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -18,7 +13,7 @@ section {
 }
 
 .footer-distributed {
-    background: rgba(0, 0, 0, 0.5);
+    background: #120907;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -33,20 +28,17 @@ section {
     vertical-align: top;
 }
 
-/* Footer left */
 .footer-distributed .footer-left {
     width: 40%;
 }
 
-/* The company logo */
 .footer-distributed h3 {
-    color: #ffffff;
+    color: white;
     margin: 0;
 }
 
-/* Footer links */
 .footer-distributed .footer-links {
-    color: #ffffff;
+    color: white;
     margin: 20px 0 12px;
     padding: 0;
 }
@@ -61,7 +53,7 @@ section {
 
 .footer-distributed .footer-company-name {
     color: white;
-    font-size: 18px;
+    font-size: var(--font-size-caption);
     font-weight: normal;
     margin: 0;
 }
@@ -72,8 +64,8 @@ section {
 }
 
 .footer-distributed .footer-center i {
-    color: #ffffff;
-    font-size: 18px;
+    color: var(--color-highlight-secondary);
+    font-size: var(--font-size-caption);
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -84,14 +76,9 @@ section {
     padding: 20px;
 }
 
-.footer-distributed .footer-center i.fa-envelope {
-    font-size: 18px;
-    line-height: 38px;
-}
-
 .footer-distributed .footer-center p {
     display: inline-block;
-    color: #ffffff;
+    color: white;
     font-weight: 400;
     vertical-align: middle;
     margin: 0;
@@ -99,7 +86,7 @@ section {
 
 .footer-distributed .footer-center p span {
     display: block;
-    font-size: 18px;
+    font-size: var(--font-size-caption);
     line-height: 2;
 }
 
@@ -108,11 +95,11 @@ section {
 }
 
 .footer-distributed .footer-links a:before {
-    content: "|";
+    content: "";
     font-weight: 300;
     font-size: 20px;
     left: 0;
-    color: #fff;
+    color: var(--color-highlight-secondary);
     display: inline-block;
     padding-right: 5px;
 }
@@ -136,8 +123,8 @@ section {
 
 .footer-distributed .footer-company-about span {
     display: block;
-    color: #ffffff;
-    font-size: 18px;
+    color: white;
+    font-size: var(--font-size-caption);
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -151,7 +138,7 @@ section {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: black;
+    background-color: black; /* Este color puede ser ajustado según tus necesidades */
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -195,6 +182,8 @@ section {
 }
 
 .social-icon {
+    color: white;
+    background-color: white;
     width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
@@ -202,5 +191,4 @@ section {
 
 .social-icon:hover {
     transform: scale(1.1);
-
 }

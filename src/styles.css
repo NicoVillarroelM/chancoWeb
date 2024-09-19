@@ -1,6 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+:root {
+    --font-family-primary: 'Vollkorn', serif;
+    --font-family-secondary: 'PT Sans', sans-serif;
+  
+    --font-size-title: 32px;
+    --line-height-title: 1.4;
+    --font-size-caption: 14px;
+    --line-height-caption: 1.2;
+  
+    --color-text: #222022;
+    --color-highlight-primary: #FFEF7E;
+    --color-highlight-secondary: #B7F9E9;
+    --border-radius-primary: 32px;
+  }
+  
 body{
     margin: 0;
 }
+
+
+  
