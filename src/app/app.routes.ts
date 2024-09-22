@@ -5,8 +5,8 @@ import { NewsComponent } from './views/components/news/news.component';
 import { HistoryComponent } from './views/components/history/history.component';
 import { PladecoComponent } from './views/components/pladeco/pladeco.component';
 import { AlcaldeComponent } from './views/components/alcalde/alcalde.component';
-import { ConcejoComponent } from './views/components/concejo/concejo.component';
-import { OrganigramaComponent } from './views/components/organigrama/organigrama.component';
+import { FlowChartComponent } from './views/components/flow-chart/flow-chart.component';
+import { CouncilComponent } from './views/components/council/council.component';
 
 export const routes: Routes = [
     {
@@ -40,11 +40,11 @@ export const routes: Routes = [
     },
     {
         path: 'concejo',
-        component: ConcejoComponent
+        component: CouncilComponent
     },
     {
         path: 'organigrama',
-        component: OrganigramaComponent
+        component: FlowChartComponent
     },
     {
         path: '**',

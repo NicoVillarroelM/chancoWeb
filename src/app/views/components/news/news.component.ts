@@ -15,9 +15,9 @@ export class NewsComponent {
     {
       id: 1,
       title: 'El SkatePark municipal de Chanco abre sus puertas con su taller para escolares',
-      date: '2024-09-02', // Formato ISO
-      displayDate: '02 Septiembre, 2024', // Para mostrar al usuario
-      image: 'assets/images/img1.jpg'
+      date: '2024-09-02',
+      displayDate: '02 Septiembre, 2024',
+      image: 'assets/images/news1.png'
     },
     {
       id: 2,
@@ -63,23 +63,22 @@ export class NewsComponent {
     }
   ];
 
-  ascending = false; // Estado para alternar entre orden ascendente y descendente
+  ascending = false;
 
   constructor(private router: Router) {
-    this.sortArticlesByDate(); // Ordenamos las noticias al cargar el componente
+    this.sortArticlesByDate(); 
   }
 
-  // Método para ordenar las noticias por fecha
   sortArticlesByDate(): void {
     this.articles.sort((a, b) => {
       return this.ascending
-        ? new Date(a.date).getTime() - new Date(b.date).getTime() // Orden ascendente
-        : new Date(b.date).getTime() - new Date(a.date).getTime(); // Orden descendente
-    });
-    this.ascending = !this.ascending; // Alterna el estado para la próxima vez
+        ? new Date(a.date).getTime() - new Date(b.date).getTime()
+        : new Date(b.date).getTime() - new Date(a.date).getTime();
+    })  ;
+    this.ascending = !this.ascending; 
   }
 
-  // Método para redirigir a la página de detalles de la noticia
+
   goToNewsDetail(id: number): void {
     this.router.navigate(['/news', id]);
   }

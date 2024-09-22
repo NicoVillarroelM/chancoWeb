@@ -99,19 +99,51 @@ export class NewsDetailComponent {
       id: 5,
       title: '323 Jóvenes Chanquinos reciben beca de educación superior',
       date: '19 de Julio, 2024',
-      image: 'assets/images/news4.png'
+      image: 'assets/images/news4.png',
+      description: [
+        "En una ceremonia emotiva y significativa, celebrada en el Gimnasio Municipal de Chanco, 134 nuevos postulantes recibieron el primer pago de la Beca Municipal de Educación Superior. Este beneficio, otorgado de manera igualitaria y equitativa al 100%, permite a los estudiantes cubrir sus necesidades educativas y generales sin necesidad de justificar sus gastos personales, destacando el compromiso de la administración local con la educación y el desarrollo juvenil.",
+        "Detalles del Programa de Becas 2024:",
+        "Total de becas otorgadas: 323",
+        "Nuevos beneficiarios: 134",
+        "Alumnos renovantes: 189",
+        "Este año 2024 ha sido significativo en términos de apoyo a la educación superior, con la entrega de 323 becas, superando en 18 el número del año anterior. Esta cifra incluye a 189 alumnos que han renovado su beca, reflejando el continuo esfuerzo de la administración para ampliar el acceso a la educación superior a más jóvenes que buscan oportunidades en otras ciudades.",
+        "La ceremonia de entrega, que tuvo lugar en el Gimnasio Municipal de Chanco, fue un evento lleno de orgullo y esperanza. Los estudiantes, acompañados por sus familias, recibieron el primer pago de la beca en un ambiente de celebración y reconocimiento. La beca municipal no solo es un apoyo económico, sino también un estímulo y reconocimiento al esfuerzo académico de estos jóvenes.",
+        "En su discurso, el alcalde Marcelo Waddington expresó: “Felicitamos a todos los jóvenes beneficiados y reconocemos su dedicación y esfuerzo para forjar un futuro académico brillante. Esto nos llena de orgullo y nos motiva a seguir trabajando juntos por la educación y el desarrollo de nuestros jóvenes chanquinos. La educación es la base sobre la cual construimos un futuro mejor para nuestra comunidad.”",
+        "El programa de becas municipales ha sido fundamental para muchos jóvenes, permitiéndoles continuar sus estudios superiores sin la carga de preocupaciones financieras. Esta iniciativa refleja el compromiso de la administración con la equidad y el acceso a la educación, asegurando que todos los jóvenes tengan la oportunidad de desarrollar su potencial académico y profesional.",
+        "La entrega de becas de este año es un testimonio del éxito y la importancia del programa. Los jóvenes beneficiados compartieron sus historias y aspiraciones, agradeciendo el apoyo recibido. “Esta beca es una gran ayuda para mí y mi familia. Me permite concentrarme en mis estudios y alcanzar mis sueños,” comentó uno de los beneficiarios.",
+        "La administración de Chanco reafirma su compromiso con la educación, confiando en que estas becas serán un pilar fundamental para que más jóvenes puedan alcanzar sus metas académicas y profesionales. El enfoque en la educación y el desarrollo juvenil sigue siendo una prioridad, con planes para seguir ampliando y mejorando el programa en los años venideros.",
+        "La entrega de estas 323 becas representa un paso significativo hacia un futuro más brillante para los jóvenes de Chanco. Con el apoyo continuo de la comunidad y la administración local, estos estudiantes están bien encaminados para lograr sus objetivos académicos y contribuir al desarrollo de la sociedad."
+      ]
     },
     {
       id: 6,
       title: 'Organizaciones Sociales son destacadas por el Municipio de Chanco',
       date: '19 de Julio, 2024',
-      image: 'assets/images/news5.png'
+      image: 'assets/images/news5.png',
+      description: [
+        "En un esfuerzo por fortalecer el tejido social y apoyar el desarrollo integral de la comunidad, diversas organizaciones de la comuna de Chanco han recibido subvenciones por parte del municipio. Este significativo logro es un testimonio del compromiso del alcalde Marcelo Waddington Guajardo con el crecimiento y la consolidación de las organizaciones sociales locales.",
+        "Durante esta semana, múltiples organizaciones sociales han sido beneficiadas con subvenciones destinadas a impulsar su desarrollo y consolidar sus proyectos. Estas subvenciones representan un apoyo crucial para las organizaciones, permitiéndoles llevar a cabo sus actividades y programas con mayor eficacia y alcance.",
+        "El alcalde Marcelo Waddington Guajardo ha reiterado su compromiso con el desarrollo integral de las organizaciones sociales de Chanco, destacando la importancia de estas instituciones en la promoción del bienestar comunitario. “Estas subvenciones son una muestra de nuestro apoyo y reconocimiento a la incansable labor de los dirigentes sociales, quienes trabajan arduamente para mejorar la calidad de vida en nuestra comuna,” afirmó el alcalde.",
+        "Las subvenciones otorgadas permitirán a las organizaciones sociales implementar proyectos que beneficiarán directamente a la comunidad, desde iniciativas educativas y culturales hasta programas de asistencia social y desarrollo económico. Este apoyo refuerza el papel de las organizaciones como agentes de cambio y desarrollo en Chanco.",
+        "El municipio de Chanco extiende sus felicitaciones a los dirigentes sociales por su dedicación y esfuerzo constante. Su labor es fundamental para la cohesión y el progreso de la comunidad, y estas subvenciones son un reconocimiento a su valiosa contribución. “Felicitamos a los dirigentes sociales por su incansable labor y les deseamos mucho éxito en sus proyectos,” añadió el alcalde.",
+        "El municipio continuará apoyando y colaborando con las organizaciones sociales para asegurar su crecimiento sostenible y su capacidad de impacto. Este compromiso se enmarca dentro de una visión más amplia de desarrollo comunitario, donde la participación y el fortalecimiento de las instituciones locales son pilares fundamentales.",
+        "La entrega de subvenciones a las organizaciones sociales de Chanco es un paso significativo hacia un futuro más inclusivo y próspero. Con el respaldo del municipio y el liderazgo de los dirigentes sociales, estas organizaciones están mejor equipadas para llevar a cabo su misión y contribuir al desarrollo integral de la comuna."
+      ]
     },
     {
       id: 7,
       title: 'Compromiso Cumplido: Autoridades de salud visitan el terreno para la Nueva Posta de Salud en Pahuil',
       date: '01 de Julio, 2024',
-      image: 'assets/images/img7.jpg'
+      image: 'assets/images/img7.jpg',
+      description: [
+        "Hoy fue un día significativo para la comunidad de Pahuil y el sector de Batuco, con la visita de la directora del Servicio de Salud Maule, Marta Caro Andía, quien trajo noticias alentadoras sobre el avance de la nueva Posta de Salud en la zona.",
+        "Acompañada por los profesionales de la Secretaría Comunal de Planificación (Secpla), Marta Caro Andía y su equipo visitaron el terreno donde se construirá la nueva posta. Este proyecto es un compromiso asumido por el alcalde Marcelo Waddington Guajardo, quien hace tres años prometió mejorar la infraestructura de salud en la región al asumir su mandato.",
+        "“Estamos muy emocionados de ver este proyecto avanzar. La nueva posta no solo será un centro de atención médica, sino también un pilar fundamental para la salud y el bienestar de los habitantes de Pahuil y Batuco,” declaró la directora Marta Caro Andía durante la visita.",
+        "El nuevo centro de salud está diseñado para atender las necesidades de la comunidad de manera más eficiente, proporcionando servicios médicos esenciales que mejorarán la calidad de vida de los residentes locales. Esta instalación moderna estará equipada para ofrecer atención primaria, servicios de urgencia y programas de salud preventiva, cumpliendo así con las expectativas y necesidades de la población.",
+        "El alcalde Marcelo Waddington Guajardo expresó su satisfacción al ver que este proyecto se está materializando. “Hoy es un día para celebrar el cumplimiento de una promesa que hicimos a nuestros vecinos. La construcción de esta posta es un testimonio de nuestro compromiso con la mejora de la infraestructura sanitaria en nuestra comunidad,” afirmó.",
+        "El proyecto de la nueva posta de salud en Pahuil es un paso crucial hacia el fortalecimiento del sistema de atención médica local y refleja la dedicación de las autoridades para mejorar la accesibilidad y la calidad de los servicios de salud en áreas rurales.",
+        "La comunidad de Pahuil y Batuco espera con entusiasmo la finalización de esta obra, que representa una mejora significativa en la atención médica y un futuro más saludable para todos sus habitantes."
+      ]
     }
   ];
 

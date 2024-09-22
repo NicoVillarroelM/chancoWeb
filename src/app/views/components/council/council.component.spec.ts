@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OrganigramaComponent } from './organigrama.component';
+import { CouncilComponent } from './council.component';
 
-describe('OrganigramaComponent', () => {
-  let component: OrganigramaComponent;
-  let fixture: ComponentFixture<OrganigramaComponent>;
+describe('CouncilComponent', () => {
+  let component: CouncilComponent;
+  let fixture: ComponentFixture<CouncilComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OrganigramaComponent]
+      imports: [CouncilComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OrganigramaComponent);
+    fixture = TestBed.createComponent(CouncilComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConcejoComponent } from './concejo.component';
+import { FlowChartComponent } from './flow-chart.component';
 
-describe('ConcejoComponent', () => {
-  let component: ConcejoComponent;
-  let fixture: ComponentFixture<ConcejoComponent>;
+describe('FlowChartComponent', () => {
+  let component: FlowChartComponent;
+  let fixture: ComponentFixture<FlowChartComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ConcejoComponent]
+      imports: [FlowChartComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ConcejoComponent);
+    fixture = TestBed.createComponent(FlowChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

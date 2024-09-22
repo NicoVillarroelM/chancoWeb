@@ -25,7 +25,7 @@
   margin-top: 20px;
 }
 
-/* Botones para compartir en redes y Me gusta */
+
 .share-btn,
 .like-btn {
   padding: 10px 20px;
@@ -35,13 +35,12 @@
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  display: flex; /* Alinear el texto y el ícono horizontalmente */
+  display: flex; 
   align-items: center;
-  gap: 10px; /* Espacio entre ícono y texto */
+  gap: 10px; 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Facebook button */
 .facebook {
   background-color: #4267B2;
 }
@@ -51,7 +50,6 @@
   transform: scale(1.05);
 }
 
-/* Twitter button */
 .twitter {
   background-color: #1DA1F2;
 }
@@ -61,7 +59,6 @@
   transform: scale(1.05);
 }
 
-/* Like button */
 .like-btn {
   background-color: #FF3B30;
 }
@@ -76,7 +73,6 @@
   margin-right: 5px;
 }
 
-/* Imagen de la noticia */
 .news-image {
   margin-top: 20px;
   width: 100%;
@@ -99,7 +95,7 @@ img:hover {
   margin-bottom: 10px;
 }
 
-/* Formulario de comentarios */
+
 .comment-form {
   width: 100%;
   max-width: 600px;
@@ -187,7 +183,8 @@ input[type="checkbox"] {
 
 /* ULTIMAS NOTICIAS */
 .news-container {
-  max-width: 900px; /* Aumenta el tamaño del contenedor */
+  max-width: 100%; 
+  width: 90%; 
   margin: 20px auto;
   background: #f9f9f9;
   border-radius: 8px;
@@ -196,13 +193,15 @@ input[type="checkbox"] {
 }
 
 .news-items {
-  display: flex; /* Mantiene todas las noticias en una fila */
-  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; 
 }
 
 .news-item {
-  width: 220px; /* Ancho fijo para cada noticia */
-  margin-right: 20px; /* Aumenta el espaciado entre las noticias */
+  flex: 1 1 calc(25% - 20px);
+  margin-right: 0; 
   border: 1px solid #e7e7e7;
   border-radius: 5px;
   overflow: hidden;
@@ -218,16 +217,49 @@ input[type="checkbox"] {
 
 .news-item img {
   width: 100%;
-  height: auto; /* Mantiene la proporción */
+  height: auto; 
 }
 
 .news-item h3 {
   padding: 10px;
-  font-size: 1em; /* Ajusta según sea necesario */
+  font-size: 1em;
   margin: 0;
 }
 
 .news-item p {
   padding: 0 10px 10px;
   color: #666;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .news-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .news-container {
+    padding: 10px; 
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .news-item {
+    flex: 1 1 100%;
+    margin-right: 0;
+  }
+
+  .news-items {
+    gap: 15px;
+  }
+
+  .news-item h3 {
+    font-size: 0.9em; 
+  }
+
+  .news-item p {
+    font-size: 0.85em;
+  }
 }
