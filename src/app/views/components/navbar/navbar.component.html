@@ -3,23 +3,41 @@
     <div class="logo">
       <a href="/home"><img src="assets/images/chancoWeb.png" alt="Logo"></a>
     </div>
-    <ul class="nav-links">
-      <li><button class="nav-button" [routerLink]="'/home'">Inicio</button></li>
-      <li><button class="nav-button" [routerLink]="'/news'"><a >Noticias</a></button></li>
+    <button class="btn" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links" [ngClass]="{'show': menuVisible}">
+      <li>
+        <button class="nav-button" [routerLink]="'/home'">
+          <i class="fas fa-home"></i> Inicio
+        </button>
+      </li>
+      <li>
+        <button class="nav-button" [routerLink]="'/news'">
+          <a><i class="fas fa-newspaper"></i> Noticias</a>
+        </button>
+      </li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Comuna</a>
+        <a [routerLink]="'/history'" class="dropbtn">
+          <i class="fas fa-landmark"></i> Comuna
+        </a>
         <div class="dropdown-content">
-          <a href="#">Chanco Histórico</a>
-          <a href="#">Pladeco</a>
+          <a [routerLink]="'/history'"><i class="fas fa-history"></i> Chanco Histórico</a>
+          <a [routerLink]="'/pladeco'"><i class="fas fa-file-alt"></i> Pladeco</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="#" class="dropbtn">Municipal</a>
+        <a [routerLink]="'/alcalde'" class="dropbtn">
+          <i class="fas fa-city"></i> Municipal
+        </a>
         <div class="dropdown-content">
-          <a href="#">Alcalde</a>
-          <a href="#">Concejo Municipal</a>
-          <a href="#">Organigrama Municipal</a>
+          <a [routerLink]="'/alcalde'"><i class="fas fa-user-tie"></i> Alcalde</a>
+          <a [routerLink]="'/concejo'"><i class="fas fa-users"></i> Concejo Municipal</a>
+          <a [routerLink]="'/organigrama'"><i class="fas fa-sitemap"></i> Organigrama Municipal</a>
         </div>
+      </li>
+      <li>
+        <a target="_blank" href="https://daemchanco.cl/"><i class="fas fa-book"></i> DAEM</a>
       </li>
     </ul> 
   </div>

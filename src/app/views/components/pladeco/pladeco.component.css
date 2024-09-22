@@ -1,0 +1,113 @@
+.pladeco-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-text);
+    text-align: center;
+    margin: 40px 20px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .pladeco-title {
+        font-size: 36px;
+        margin: 60px 40px;
+    }
+}
+
+.btn-with-icon {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-with-icon i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.btn-with-icon:hover {
+    background-color: #0056b3;
+}
+
+.mission-vision-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-card, .vision-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.mission-title, .vision-title {
+    font-family: 'Garamond', serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission-description, .vision-description {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.learn-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+}
+
+.book-icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .mission-card, .vision-card {
+        padding: 20px;
+    }
+
+    .mission-title, .vision-title {
+        font-size: 24px;
+    }
+
+    .mission-description, .vision-description {
+        font-size: 16px;
+    }
+}

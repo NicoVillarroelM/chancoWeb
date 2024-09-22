@@ -1,0 +1,31 @@
+.alcalde-container {
+    max-width: 600px; 
+    margin: auto; 
+    margin-top: 100px;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.alcalde-name {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 24px; 
+    color: #333; 
+    margin-bottom: 15px;
+}
+
+.alcalde-image {
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.alcalde-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5; 
+}

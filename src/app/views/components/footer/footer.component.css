@@ -11,6 +11,14 @@ section {
 .logo-footer {
     height: 70px;
 }
+.btn-correo{
+    padding: 0;
+    align-items: center;
+    color: white;
+    background-color: #120907;
+    border: none;
+    cursor: pointer;
+}
 
 .footer-distributed {
     background: #120907;
@@ -95,7 +103,7 @@ section {
 }
 
 .footer-distributed .footer-links a:before {
-    content: "";
+    content: " ";
     font-weight: 300;
     font-size: 20px;
     left: 0;
@@ -169,26 +177,22 @@ section {
 
 .social-container {
     display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.social-link {
-    display: inline-block;
+    gap: 15px; 
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-link {
     text-decoration: none;
-}
-
-.social-icon {
     color: white;
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
+  }
+  
+  .social-icon {
+    color: #555;
+  }
+  
+  .social-link:hover .social-icon {
+    color: #0077cc;
+  }
 
-.social-icon:hover {
-    transform: scale(1.1);
-}
+

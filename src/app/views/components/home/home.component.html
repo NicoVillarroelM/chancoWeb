@@ -6,7 +6,12 @@
     </div>
 </div>
 
-<h1>Nuestras noticias</h1>
+<div class="button-container">
+  <a target="_blank" href="https://cloud.e-com.cl/Pagos/PermisoCirculacion/renovacion/ecomv3_BE/vista/?id=115&plebcas=12&portal=%279/21/2024%27&html=70&opc=1">
+    <img src="assets/images/permiso.png" alt="Permiso Button" class="button-image">
+  </a>
+</div>
+
 <div class="band">
   <div *ngFor="let item of newsList" class="item-{{item.id}}">
     <a (click)="goToNewsDetail(item.id)" class="card"> 
@@ -19,3 +24,106 @@
   </div>
 </div>
 
+
+<!-- Contenedor de información -->
+<div class="main-container">
+  <div class="action-buttons">
+    <a target="_blank" href="https://cloud.e-com.cl/Pagos/PermisoCirculacion/renovacion/ecomv3_BE/vista/?id=115&plebcas=12&portal=%272/8/2024%27&html=70&opc=1" class="action-item">
+      <i class="fas fa-car"></i>
+      <p>Paga tu permiso de circulación</p>
+    </a>
+    <a target="_blank" href="https://cloud.e-com.cl/Pagos/PermisoCirculacion/renovacion/validacionpermiso.asp?codmunic=115" class="action-item">
+      <i class="fas fa-check-circle"></i>
+      <p>Valida tu permiso de circulación</p>
+    </a>
+    <a target="_blank" href="https://cloud.e-com.cl/Pagos/PatentesComerciales/Pago%20Patentes/onlinev3/inicio.asp?codMunic=115" class="action-item">
+      <i class="fas fa-file-invoice"></i>
+      <p>Paga tu patente comercial</p>
+    </a>
+    <a target="_blank" href="https://cloud.e-com.cl/pagos/patentescomerciales/pago%20patentes/online/validacionpatente.asp?codMunic=115" class="action-item">
+      <i class="fas fa-check-square"></i>
+      <p>Valida tu patente comercial</p>
+    </a>
+  </div>
+
+  <!-- Sección de información y servicios -->
+  <h2 class="section-title">Información y servicios</h2>
+  <div class="service-grid">
+    <a target="_blank" href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=MU037" class="service-item">
+      <i class="fas fa-balance-scale"></i>
+      <p>Transparencia Activa</p>
+      <p>Ley de Transparencia</p>
+    </a>
+    <a target="_blank" href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=75b85b2e3c2c61a0347a4ebf3f7cd850" class="service-item">
+      <i class="fas fa-info-circle"></i>
+      <p>Solicitar Información</p>
+      <p>Ley de Transparencia</p>
+    </a>
+    <a target="_blank" href="https://chanco.cl/wp-content/uploads/2019/01/Plan-Comunal-de-Emergencia-2018.pdf" class="service-item">
+      <i class="fas fa-shield-alt"></i>
+      <p>Plan Comunal de Protección Civil</p>
+      <p>y Emergencias</p>
+    </a>
+    <a target="_blank" href="https://www.leylobby.gob.cl/instituciones/MU037" class="service-item">
+      <i class="fas fa-gavel"></i>
+      <p>Plataforma Ley de Lobby</p>
+    </a>
+
+    <!-- Otros bloques de información -->
+    <a target="_blank" href="#" class="service-item">
+      <i class="fas fa-graduation-cap"></i>
+      <p>Beca Municipal</p>
+      <p>Educación Superior</p>
+    </a>
+    <a target="_blank" href="https://www.mercadopublico.cl/Portal/Modules/Site/Busquedas/BuscadorAvanzado.aspx?qs=1" class="service-item">
+      <i class="fas fa-shopping-cart"></i>
+      <p>Chile Compra</p>
+      <p>Mercado Público</p>
+    </a>
+    <a target="_blank" href="url_mascota_protegida" class="service-item">
+      <i class="fas fa-paw"></i>
+      <p>Mascota Protegida</p>
+      <p>Subdere</p>
+    </a>
+    <a target="_blank" href="https://drive.google.com/file/d/1EQi2bCo_6a5yID6rKfN1QO8YXopfqNjW/view" class="service-item">
+      <i class="fas fa-users"></i>
+      <p>Ordenanza Municipal</p>
+      <p>Participación Ciudadana</p>
+    </a>
+
+    <!-- Más bloques de información -->
+    <a target="_blank" href="#" class="service-item">
+      <i class="fas fa-chart-line"></i>
+      <p>Plan de Desarrollo Comunal</p>
+      <p>PLADEC</p>
+    </a>
+    <a target="_blank" href="#" class="service-item">
+      <i class="fas fa-file-contract"></i>
+      <p>Concursos Públicos</p>
+    </a>
+    <a target="_blank" href="#" class="service-item">
+      <i class="fas fa-landmark"></i>
+      <p>Reavalúo 2023</p>
+      <p>Sitios no edificados</p>
+    </a>
+    <a target="_blank" href="url_plan_regulador" class="service-item">
+      <i class="fas fa-handshake"></i>
+      <p>Plan Regulador Intercomunal</p>
+      <p>(PRI)</p>
+    </a>
+  </div>
+
+  <h2 class="section-title">Servicio Impuestos Internos (SII)</h2>
+  <div class="service-container">
+    <a target="_blank" href="https://drive.google.com/file/d/1A5Z0g0R9pAYitTVdhwuIVabqHxaVpI1g/view" class="service-item service1">
+      <i class="fas fa-landmark"></i>
+      <p>Reavalúo de bienes raíces Agrícola</p>
+      <p>2024</p>
+    </a>
+    <a target="_blank" href="https://drive.google.com/file/d/1A7V6SFY40rysdyWi-k6gvWDt5hsnGT7h/view" class="service-item service2">
+      <i class="fas fa-handshake"></i>
+      <p>Reavalúo de sitios no edificados, propiedades abandonadas y pozos lastreros</p>
+      <p>2024</p>
+    </a>
+  </div>
+</div>

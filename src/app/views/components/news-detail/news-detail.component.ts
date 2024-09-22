@@ -16,7 +16,7 @@ export class NewsDetailComponent {
       id: 1,
       title: 'El SkatePark municipal de Chanco abre sus puertas con su taller para escolares',
       date: '02 Septiembre, 2024',
-      image: 'assets/images/img1.jpg',
+      image: 'assets/images/news1.png',
       description: [
         'Con gran entusiasmo, el Municipio de Chanco ha dado inicio al taller de Skate para niños y niñas de los establecimientos educacionales de la comuna. Este taller se llevará a cabo en el recién inaugurado SkatePark municipal, donde los pequeños podrán disfrutar de esta disciplina que ha ganado popularidad en todo el mundo y que hoy en día es un deporte olímpico.',
         
@@ -33,11 +33,14 @@ export class NewsDetailComponent {
       id: 2,
       title: 'Chanco se posiciona entre los mejores municipios con una gestión del país',
       date: '02 de Septiembre, 2024',
-      image: 'assets/images/img2.jpg',
+      image: 'assets/images/news2.png',
       description: [
         "El municipio de Chanco ha alcanzado un hito histórico al ser reconocido entre los municipios con mejor gestión a nivel nacional, obteniendo por primera vez el prestigioso Fondo de Incentivo a la Gestión Municipal (FIGEM) este logro es un reflejo del trabajo incansable de los funcionarios municipales y del liderazgo del alcalde Marcelo Waddington Guajardo.",
+        
         "El FIGEM, otorgado por la Subsecretaría de Desarrollo Regional y Administrativo (SUBDERE), es un fondo que premia la eficiencia en la gestión administrativa y financiera de los municipios. Chanco ha demostrado una notable mejora en su administración en tan solo tres años, lo que ha resultado en la obtención de $90.702.386 millones de pesos que serán destinados a seguir avanzando en iniciativas clave para la comuna.",
+        
         "“Estamos felices y orgullosos de cada uno de nuestros funcionarios y su trabajo. Este reconocimiento es el fruto de nuestro esfuerzo continuo por mejorar la calidad de vida en nuestra comuna”, declaró el alcalde Waddington Guajardo.“Gracias al compromiso de nuestro equipo y a este importante logro, podremos seguir potenciando las ayudas sociales y las inversiones en tiempos difíciles”.",
+        
         "Este importante financiamiento permitirá a Chanco continuar con su misión de construir un municipio más transparente, honesto y alegre, siempre en beneficio de todos sus habitantes.“Sigamos trabajando juntos por ese Chanco que todos queremos”, concluyó el alcalde.",
       ]
     },
@@ -68,20 +71,41 @@ export class NewsDetailComponent {
       id: 4,
       title: 'Chanco celebra su 152 aniversario con un emotivo acto conmemorativo',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img4.jpg',
-      description: 'Organizaciones Sociales son destacadas por el Municipio de Chanco'
+      image: 'assets/images/125_aniversario.png',
+      description: [
+        "Con la presencia de diversas autoridades, dirigentes sociales y la comunidad general, se realizó el anco conmemorativo del 152° aniversario de nuestra querida Comuna de Chanco",
+        "La ceremonia estuvo marcada por la emoción y el reconocimiento a aquellos chanquinos y chanquinas que han demostrado liderazgo y dedicación en beneficio de nuestra comunidad.",
+        "Por tercer año consecutivo, el Municipio destacó a ciudadanos ejemplares en diversas categorías:",
+        "Comerciante destacado: Héctor Campos",
+        "Donaciones de terreno: Juan Luis Constenla",
+        "Dirigente Social Destacado: Juan Esquivel Leal",
+        "Comerciante Gastronómico de la comuna por su receta tradicional de las famosas longanizas ROSALES: Sergio Rosales",
+        "Funcionario destacado de Emergencias: Hugo González",
+        "Joven Profesional Destacado de la comuna: Jimmy Gutierrez",
+        "Bombero destacado por su trayectoria y entrega a la comuna: José Palermo Arellano",
+        "Medio de Comunicación Emergente: Harry TV, Eliécer Jara Salgado",
+        "Dirigente Deportivo Destacado de la Liga Rural: Juan Carlos Sepúlveda",
+        "Carabinero Destacado: Elías Jara",
+        "Artesano de la comuna: Pedro Vasquez",
+        "Personas de mar: Mireya Muñoz Lepe",
+        "Artista destacado honorífico : Ivana Pino Arellano",
+        "El acto también contó con la participación artística de las escuelas Los Héroes y San Ambrosio, así como del Liceo Federico Albert Faupp, quienes deleitaron a los presentes con su talento.",
+        "El alcalde Marcelo Waddington Guajardo destacó la importancia de esta celebración, diciendo: “Este aniversario no solo es un momento para recordar nuestra historia, sino también para honrar a aquellos que, con su trabajo y dedicación, hacen de Chanco un lugar mejor cada día. Agradezco a todos los presentes y felicito a los destacados por su invaluable contribución a nuestra comunidad.”",
+        "¡Felices 152 años, Chanco!"
+
+      ]
     },
     {
       id: 5,
       title: '323 Jóvenes Chanquinos reciben beca de educación superior',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img5.jpg'
+      image: 'assets/images/news4.png'
     },
     {
       id: 6,
       title: 'Organizaciones Sociales son destacadas por el Municipio de Chanco',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img6.jpg'
+      image: 'assets/images/news5.png'
     },
     {
       id: 7,
@@ -90,6 +114,7 @@ export class NewsDetailComponent {
       image: 'assets/images/img7.jpg'
     }
   ];
+
   shareOnFacebook() {
     console.log('Compartiendo en Facebook');
   }

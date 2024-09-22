@@ -1,11 +1,11 @@
 
 <footer class="footer-distributed">
   <div class="footer-left">
-    <img class="logo-footer" src="assets/images/chancoWeb.png" alt="Logo" />
+    <a [routerLink]="'/home'"><img class="logo-footer" src="assets/images/chancoWeb.png" alt="Logo" /></a> 
     <p class="footer-links">
-      <a href="#" class="link-1">Inicio</a>
+      <a href="#" [routerLink]="'/home'">Inicio</a>
 
-      <a href="#">Noticias</a>
+      <a [routerLink]="'/news'">Noticias</a>
 
       <a href="#">Historia</a>
     </p>
@@ -19,7 +19,7 @@
       <p>
         Mesa central: 73-2636600 <br /> <br>
         Emergencia: +569-4223-2848 <br> <br>
-        Contáctanos: alcaldiachanco.cl <br>
+        <button class="btn-correo">Contáctanos: alcaldia&#64; chanco.cl</button> <br>
       </p>
     </div>
   </div>
@@ -32,15 +32,16 @@
     </p>
 
     <div class="social-container">
-        <a href="https://www.facebook.com/municipalidadchanco" class="social-link">
-            <img class="social-icon" src="assets/images/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.youtube.com/user/chancocl" class="social-link">
-            <img class="social-icon" src="assets/images/youtube.png" alt="YouTube">
-        </a>
-        <a href="https://www.instagram.com/munichanco/" class="social-link">
-            <img class="social-icon" src="assets/images/instagram.png" alt="Instagram">
-        </a>
+      <a href="https://www.facebook.com/municipalidadchanco" class="social-link" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.youtube.com/user/chancocl" class="social-link" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/munichanco/" class="social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
+    
   </div>
 </footer>

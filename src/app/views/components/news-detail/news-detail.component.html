@@ -4,9 +4,15 @@
   <p class="news-author">Municipalidad de Chanco, 02 de Septiembre, 2024</p>
 
   <div class="news-actions">
-    <button class="share-btn facebook" (click)="shareOnFacebook()">Compartir en Facebook</button>
-    <button class="share-btn twitter" (click)="shareOnTwitter()">Compartir en Twitter</button>
-    <button class="like-btn" (click)="likeNews()">Me gusta</button>
+    <button class="share-btn facebook" (click)="shareOnFacebook()">
+      <i class="fab fa-facebook"></i> Compartir en Facebook
+    </button>
+    <button class="share-btn twitter" (click)="shareOnTwitter()">
+      <i class="fab fa-twitter"></i> Compartir en Twitter
+    </button>
+    <button class="like-btn" (click)="likeNews()">
+      <i class="fas fa-heart"></i> Me gusta
+    </button>
   </div>
 
   <img [src]="news.image" alt="{{ news.title }}" class="news-image" />
@@ -15,12 +21,64 @@
     <p *ngFor="let paragraph of news.description">{{ paragraph }}</p>
   </div>  
 
+  <!-- ULTIMAS NOTICIAS -->
+  <div class="news-container">
+    <h2>Últimas Noticias</h2>
+    <div class="news-items">
+        <div class="news-item">
+            <a href="ruta/a/noticia1.html">
+                <img src="assets/images/img1.jpg" alt="El SkatePark municipal de Chanco abre sus puertas" />
+                <h3>El SkatePark municipal de Chanco abre sus puertas con su taller para escolares</h3>
+                <p>02 Septiembre, 2024</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="ruta/a/noticia2.html">
+                <img src="assets/images/news2.png" alt="Chanco se posiciona entre los mejores municipios" />
+                <h3>Chanco se posiciona entre los mejores municipios con una gestión del país</h3>
+                <p>02 Septiembre, 2024</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="ruta/a/noticia3.html">
+                <img src="assets/images/img3.jpg" alt="Familias Chanquinas Tendrán Contenedores de Basura" />
+                <h3>Familias Chanquinas Tendrán Contenedores de Basura Domiciliaria</h3>
+                <p>02 Septiembre, 2024</p>
+            </a>
+        </div>
+        <div class="news-item">
+            <a href="ruta/a/noticia4.html">
+                <img src="assets/images/125_aniversario.png" alt="Chanco celebra su 152 aniversario" />
+                <h3>Chanco celebra su 152 aniversario con un emotivo acto conmemorativo</h3>
+                <p>19 Julio, 2024</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+
   <div class="comment-form">
     <h2>Deja un comentario</h2>
     <form (submit)="submitComment($event)">
-      <label for="comment">Tu comentario</label>
-      <textarea id="comment" name="comment" required></textarea>
-      <button type="submit">Enviar comentario</button>
+        <div class="form-group">
+            <label for="comment">Tu comentario</label>
+            <textarea id="comment" name="comment" placeholder="Escribe tu comentario aquí..." required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre*</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico*</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+        </div>
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="save-info" />
+                Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.
+            </label>
+        </div>
+        <button type="submit">Publicar comentario</button>
     </form>
-  </div>
 </div>
+

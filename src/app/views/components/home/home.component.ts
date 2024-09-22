@@ -24,13 +24,13 @@ export class HomeComponent {
       id: 1,
       title: 'El SkatePark municipal de Chanco abre sus puertas con su taller para escolares',
       date: '02 Septiembre, 2024',
-      image: 'assets/images/img1.jpg'
+      image: 'assets/images/news1.png'
     },
     {
       id: 2,
       title: 'Chanco se posiciona entre los mejores municipios con una gestión del país',
       date: '02 de Septiembre, 2024',
-      image: 'assets/images/img2.jpg'
+      image: 'assets/images/news2.png'
     },
     {
       id: 3,
@@ -42,20 +42,20 @@ export class HomeComponent {
       id: 4,
       title: 'Chanco celebra su 152 aniversario con un emotivo acto conmemorativo',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img4.jpg',
+      image: 'assets/images/125_aniversario.png',
       description: 'Organizaciones Sociales son destacadas por el Municipio de Chanco'
     },
     {
       id: 5,
       title: '323 Jóvenes Chanquinos reciben beca de educación superior',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img5.jpg'
+      image: 'assets/images/news4.png'
     },
     {
       id: 6,
       title: 'Organizaciones Sociales son destacadas por el Municipio de Chanco',
       date: '19 de Julio, 2024',
-      image: 'assets/images/img6.jpg'
+      image: 'assets/images/news5.png'
     },
     {
       id: 7,

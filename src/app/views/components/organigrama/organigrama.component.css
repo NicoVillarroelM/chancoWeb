@@ -1,0 +1,21 @@
+.organigrama-container {
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.organigrama-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.organigrama-image {
+    width: 100%; /* Para que ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 800px; /* Altura máxima para que no se desborde */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
