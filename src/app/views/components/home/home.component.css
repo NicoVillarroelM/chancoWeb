@@ -1,4 +1,4 @@
-/* Contenedor principal del hero */
+
 .hero-container {
   position: relative;
   width: 100%;
@@ -35,8 +35,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 600px; /* Ajusta el ancho máximo del contenido */
+  width: 80%;
+  max-width: 600px;
 }
 
 .hero-text h1 {
@@ -220,10 +220,10 @@
 /* Grid de servicios */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Mantiene el tamaño mínimo de 200px para pantallas pequeñas */
-  gap: 15px; /* Reduce el espacio entre las tarjetas */
-  width: 90%; /* Ajusta el ancho del grid */
-  margin: 0 auto; /* Centra el grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 15px;
+  width: 90%; 
+  margin: 0 auto; 
 }
 
 .service-item {
@@ -238,7 +238,7 @@
 }
 @media (min-width: 768px) {
   .service-grid {
-    grid-template-columns: repeat(4, 1fr); /* Fuerza 4 columnas en pantallas medianas o más grandes */
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -271,4 +271,11 @@
   border: 1px solid #ccc;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .service-container {
+    margin-left: 30px; 
+    margin-right: 30px; 
+  }
 }
