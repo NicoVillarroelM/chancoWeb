@@ -1,17 +1,18 @@
-
-
 <div class="band">
+  <!-- Banner de bienvenida -->
   <div class="welcome-banner">
     <h2 class="welcome-title">Bienvenidos a nuestro Boletín</h2>
     <p class="welcome-description">Entérate de las últimas novedades y eventos de nuestra comunidad.</p>
   </div>
-  
-  <button (click)="sortArticlesByDate()">
-    Ordenar por fecha {{ ascending ? 'Descendente' : 'Ascendente' }}
-  </button>
 
+  <!-- Botón para ordenar noticias -->
+  <div class="sort-button-container">
+    <button class="sort-button" (click)="sortArticlesByDate()">
+      Ordenar por fecha {{ ascending ? 'Descendente' : 'Ascendente' }}
+    </button>
+  </div>
 
-
+  <!-- Contenedor de las noticias -->
   <div *ngFor="let item of articles" class="item-{{item.id}}">
     <div class="card" (click)="goToNewsDetail(item.id)">
       <img [src]="item.image" class="card__image" alt="{{item.title}}" />

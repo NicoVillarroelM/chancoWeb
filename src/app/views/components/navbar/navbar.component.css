@@ -4,8 +4,8 @@ nav {
   left: 0;
   width: 100%;      
   z-index: 1000;
-  background-color: rgba(18, 9, 7, 0.8); /* Fondo oscuro y opaco */
-  transition: background-color 0.3s ease; /* Transición suave para el fondo */
+  background-color: rgba(18, 9, 7, 0.8); 
+  transition: background-color 0.3s ease; 
 }
 
 .btn {
@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-links {
-  transition: left 0.3s ease; /* Transición suave para mostrar el menú */
+  transition: left 0.3s ease;
 }
 
 .nav-links.show {
@@ -67,7 +67,7 @@ nav {
   font-weight: 500;
   padding: 9px 15px;
   border-radius: 5px;
-  transition: background 0.3s ease, transform 0.3s ease; /* Animación suave */
+  transition: background 0.3s ease, transform 0.3s ease;
   background: none;
   border: none;
 }
@@ -75,7 +75,7 @@ nav {
 .nav-links li a:hover,
 .nav-links li .nav-button:hover {
   background: var(--border-color);
-  transform: scale(1.05); /* Efecto de escalado */
+  transform: scale(1.05);
 }
 
 .nav-button {
@@ -95,15 +95,15 @@ nav {
     max-width: 350px;
     top: 0;
     left: -100%;
-    background: rgba(18, 9, 7, 0.9); /* Fondo del menú desplegable */
+    background: rgba(18, 9, 7, 0.9);
     flex-direction: column;
     padding: 50px 10px;
-    transition: left 0.3s ease; /* Transición suave para el menú */
+    transition: left 0.3s ease; 
     overflow-y: auto;
   }
 
   .nav-links.show {
-    left: 0; /* Menú visible */
+    left: 0; 
   }
 
   .nav-links li {
@@ -124,7 +124,7 @@ nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(18, 9, 7, 0.8); /* Fondo del dropdown */
+  background-color: rgba(18, 9, 7, 0.8); 
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
