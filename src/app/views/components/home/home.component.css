@@ -1,4 +1,6 @@
-
+/* ---------------------------------- 
+   Contenedor Principal del Hero 
+---------------------------------- */
 .hero-container {
   position: relative;
   width: 100%;
@@ -19,6 +21,9 @@
   z-index: -1;
 }
 
+/* ---------------------------------- 
+   Texto del Hero 
+---------------------------------- */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -49,7 +54,9 @@
   margin: 0;
 }
 
-/* Responsive hero */
+/* ---------------------------------- 
+   Responsivo para el Hero 
+---------------------------------- */
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 2.5rem;
@@ -70,7 +77,9 @@
   }
 }
 
-/* Contenedor del botón con imagen debajo del hero */
+/* ---------------------------------- 
+   Contenedor de Botones 
+---------------------------------- */
 .button-container {
   width: 70%;
   max-width: 1240px;
@@ -88,7 +97,9 @@
   transform: scale(1.05); /* Efecto hover */
 }
 
-/* Estilos para el contenedor de tarjetas */
+/* ---------------------------------- 
+   Estilos de la Band (Contenedor de Tarjetas)
+---------------------------------- */
 .band {
   width: 70%;
   max-width: 1240px;
@@ -110,7 +121,9 @@
   }
 }
 
-/* Tarjetas individuales */
+/* ---------------------------------- 
+   Estilos de Tarjetas Individuales 
+---------------------------------- */
 .card {
   background: white;
   text-decoration: none;
@@ -168,7 +181,9 @@
   }
 }
 
-/* Contenedor de botones de acción */
+/* ---------------------------------- 
+   Contenedor de Botones de Acción 
+---------------------------------- */
 .action-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columnas con tamaños iguales */
@@ -201,6 +216,7 @@
   background-color: #004494;
   transform: scale(1.05);
 }
+
 @media (max-width: 768px) {
   .action-buttons {
     grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
@@ -208,7 +224,9 @@
   }
 }
 
-/* Título de sección */
+/* ---------------------------------- 
+   Título de Sección 
+---------------------------------- */
 .section-title {
   font-size: 24px;
   font-weight: bold;
@@ -217,7 +235,9 @@
   margin-bottom: 20px;
 }
 
-/* Grid de servicios */
+/* ---------------------------------- 
+   Grid de Servicios 
+---------------------------------- */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
@@ -236,12 +256,12 @@
   text-decoration: none;
   color: #333;
 }
+
 @media (min-width: 768px) {
   .service-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
 
 .service-item:hover {
   transform: scale(1.05);
@@ -259,6 +279,9 @@
   font-weight: bold;
 }
 
+/* ---------------------------------- 
+   Contenedor de Servicios 
+---------------------------------- */
 .service-container {
   display: flex;
   justify-content: center;

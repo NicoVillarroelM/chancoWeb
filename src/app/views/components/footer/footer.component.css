@@ -1,3 +1,6 @@
+/* ---------------------------------- 
+   Estilos Generales 
+---------------------------------- */
 section {
     width: 100%;
     display: inline-block;
@@ -11,7 +14,8 @@ section {
 .logo-footer {
     height: 70px;
 }
-.btn-correo{
+
+.btn-correo {
     padding: 0;
     align-items: center;
     color: white;
@@ -20,6 +24,9 @@ section {
     cursor: pointer;
 }
 
+/* ---------------------------------- 
+   Estilos del Pie de Página 
+---------------------------------- */
 .footer-distributed {
     background: #120907;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -29,6 +36,9 @@ section {
     padding: 55px 50px;
 }
 
+/* ---------------------------------- 
+   Secciones del Footer 
+---------------------------------- */
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right {
@@ -40,6 +50,17 @@ section {
     width: 40%;
 }
 
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+/* ---------------------------------- 
+   Estilos de la Sección Izquierda 
+---------------------------------- */
 .footer-distributed h3 {
     color: white;
     margin: 0;
@@ -66,11 +87,9 @@ section {
     margin: 0;
 }
 
-/* Footer Center */
-.footer-distributed .footer-center {
-    width: 35%;
-}
-
+/* ---------------------------------- 
+   Estilos de la Sección Central 
+---------------------------------- */
 .footer-distributed .footer-center i {
     color: var(--color-highlight-secondary);
     font-size: var(--font-size-caption);
@@ -80,7 +99,6 @@ section {
     text-align: center;
     line-height: 42px;
     margin: 10px 15px;
-    align-items: center;
     padding: 20px;
 }
 
@@ -102,25 +120,9 @@ section {
     text-decoration: none;
 }
 
-.footer-distributed .footer-links a:before {
-    content: " ";
-    font-weight: 300;
-    font-size: 20px;
-    left: 0;
-    color: var(--color-highlight-secondary);
-    display: inline-block;
-    padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-    content: none;
-}
-
-/* Footer Right */
-.footer-distributed .footer-right {
-    width: 20%;
-}
-
+/* ---------------------------------- 
+   Estilos de la Sección Derecha 
+---------------------------------- */
 .footer-distributed .footer-company-about {
     line-height: 20px;
     color: white;
@@ -156,6 +158,9 @@ section {
     margin-bottom: 5px;
 }
 
+/* ---------------------------------- 
+   Estilos Responsivos 
+---------------------------------- */
 @media (max-width: 880px) {
     .footer-distributed {
         font: bold 14px sans-serif;
@@ -175,24 +180,25 @@ section {
     }
 }
 
+/* ---------------------------------- 
+   Estilos de Redes Sociales 
+---------------------------------- */
 .social-container {
     display: flex;
     gap: 15px; 
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .social-link {
+}
+
+.social-link {
     text-decoration: none;
     color: white;
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
     color: #555;
-  }
-  
-  .social-link:hover .social-icon {
+}
+
+.social-link:hover .social-icon {
     color: #0077cc;
-  }
-
-
+}

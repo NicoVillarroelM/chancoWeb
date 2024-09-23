@@ -7,6 +7,7 @@ import { PladecoComponent } from './views/components/pladeco/pladeco.component';
 import { AlcaldeComponent } from './views/components/alcalde/alcalde.component';
 import { FlowChartComponent } from './views/components/flow-chart/flow-chart.component';
 import { CouncilComponent } from './views/components/council/council.component';
+import { ContactComponent } from './views/components/contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -45,6 +46,10 @@ export const routes: Routes = [
     {
         path: 'organigrama',
         component: FlowChartComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
     },
     {
         path: '**',

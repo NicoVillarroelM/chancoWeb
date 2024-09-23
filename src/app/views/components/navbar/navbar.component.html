@@ -3,19 +3,19 @@
     <div class="logo">
       <a href="/home"><img src="assets/images/chancoWeb.png" alt="Logo"></a>
     </div>
-    <button class="btn" (click)="toggleMenu()">
+    <a class="btn" (click)="toggleMenu()">
       <i class="fas fa-bars"></i>
-    </button>
+    </a>
     <ul class="nav-links" [ngClass]="{'show': menuVisible}">
       <li>
-        <button class="nav-button" [routerLink]="'/home'" (click)="closeMenu()">
+        <a class="nav-button" [routerLink]="'/home'" (click)="closeMenu()">
           <i class="fas fa-home"></i> Inicio
-        </button>
+        </a>
       </li>
       <li>
-        <button class="nav-button" [routerLink]="'/news'" (click)="closeMenu()">
+        <a class="nav-button" [routerLink]="'/news'" (click)="closeMenu()">
           <i class="fas fa-newspaper"></i> Noticias
-        </button>
+        </a>
       </li>
       <li class="dropdown">
         <a [routerLink]="'/history'" class="dropbtn" (click)="closeMenu()">
@@ -37,7 +37,10 @@
         </div>
       </li>
       <li>
-        <a target="_blank" href="https://daemchanco.cl/" (click)="closeMenu()"><i class="fas fa-book"></i> DAEM</a>
+        <a target="_blank" class="nav-button" href="https://daemchanco.cl/" (click)="closeMenu()"><i class="fas fa-book"></i> DAEM</a>
+      </li>
+      <li>
+        <a target="_blank" class="nav-button" [routerLink]="'/contact'" (click)="closeMenu()"><i class="fas fa-address-book"></i> Contacto</a>
       </li>
     </ul> 
   </div>

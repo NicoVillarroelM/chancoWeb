@@ -29,8 +29,8 @@
 
 @media (max-width: 600px) {
   .news-actions {
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    width: 50%; /* El ancho se ajusta al 100% del contenedor */
+    grid-template-columns: 1fr;
+    width: 50%; 
   }
 }
 

@@ -1,0 +1,19 @@
+<div class="contact-container">
+    <h2>Contactanos</h2>
+    <form (submit)="onSubmit($event)">
+      <div>
+        <label for="name">Nombre:</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+      <div>
+        <label for="email">Correo Electrónico:</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  
