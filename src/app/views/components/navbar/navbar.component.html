@@ -8,36 +8,36 @@
     </button>
     <ul class="nav-links" [ngClass]="{'show': menuVisible}">
       <li>
-        <button class="nav-button" [routerLink]="'/home'">
+        <button class="nav-button" [routerLink]="'/home'" (click)="closeMenu()">
           <i class="fas fa-home"></i> Inicio
         </button>
       </li>
       <li>
-        <button class="nav-button" [routerLink]="'/news'">
-          <a><i class="fas fa-newspaper"></i> Noticias</a>
+        <button class="nav-button" [routerLink]="'/news'" (click)="closeMenu()">
+          <i class="fas fa-newspaper"></i> Noticias
         </button>
       </li>
       <li class="dropdown">
-        <a [routerLink]="'/history'" class="dropbtn">
+        <a [routerLink]="'/history'" class="dropbtn" (click)="closeMenu()">
           <i class="fas fa-landmark"></i> Comuna
         </a>
         <div class="dropdown-content">
-          <a [routerLink]="'/history'"><i class="fas fa-history"></i> Chanco Histórico</a>
-          <a [routerLink]="'/pladeco'"><i class="fas fa-file-alt"></i> Pladeco</a>
+          <a [routerLink]="'/history'" (click)="closeMenu()"><i class="fas fa-history"></i> Chanco Histórico</a>
+          <a [routerLink]="'/pladeco'" (click)="closeMenu()"><i class="fas fa-file-alt"></i> Pladeco</a>
         </div>
       </li>
       <li class="dropdown">
-        <a [routerLink]="'/alcalde'" class="dropbtn">
+        <a [routerLink]="'/alcalde'" class="dropbtn" (click)="closeMenu()">
           <i class="fas fa-city"></i> Municipal
         </a>
         <div class="dropdown-content">
-          <a [routerLink]="'/alcalde'"><i class="fas fa-user-tie"></i> Alcalde</a>
-          <a [routerLink]="'/concejo'"><i class="fas fa-users"></i> Concejo Municipal</a>
-          <a [routerLink]="'/organigrama'"><i class="fas fa-sitemap"></i> Organigrama Municipal</a>
+          <a [routerLink]="'/alcalde'" (click)="closeMenu()"><i class="fas fa-user-tie"></i> Alcalde</a>
+          <a [routerLink]="'/concejo'" (click)="closeMenu()"><i class="fas fa-users"></i> Concejo Municipal</a>
+          <a [routerLink]="'/organigrama'" (click)="closeMenu()"><i class="fas fa-sitemap"></i> Organigrama Municipal</a>
         </div>
       </li>
       <li>
-        <a target="_blank" href="https://daemchanco.cl/"><i class="fas fa-book"></i> DAEM</a>
+        <a target="_blank" href="https://daemchanco.cl/" (click)="closeMenu()"><i class="fas fa-book"></i> DAEM</a>
       </li>
     </ul> 
   </div>

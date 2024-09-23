@@ -10,9 +10,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  menuVisible: boolean = false;
+  menuVisible: boolean = false; // Estado del menú
 
   toggleMenu() {
     this.menuVisible = !this.menuVisible;
+  }
+
+  closeMenu() {
+    this.menuVisible = false; // Cierra el menú
   }
 }
