@@ -3,9 +3,14 @@
 ---------------------------------- */
 .concejo-container {
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 120px auto;
     padding: 20px;
     text-align: center;
+}
+@media (max-width: 768px) {
+    .concejo-container {
+        margin-top: 220px; /* Ajusta el margen superior para que el título esté más abajo */
+    }
 }
 
 /* ---------------------------------- 

@@ -1,6 +1,6 @@
 .contact-container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 170px auto;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -13,6 +13,7 @@
     margin-bottom: 20px;
     color: #333;
 }
+
 
 .contact-container label {
     display: block;
@@ -66,5 +67,10 @@
 
     .contact-container button {
         padding: 8px;
+    }
+
+
+    .contact-container h2 {
+        margin-top: 150px; 
     }
 }

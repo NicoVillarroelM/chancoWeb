@@ -4,14 +4,14 @@
     font-weight: bold;
     color: var(--color-text);
     text-align: center;
-    margin: 40px 20px;
+    margin: 200px 0;
     line-height: 1.5;
 }
 
 @media (min-width: 768px) {
     .pladeco-title {
         font-size: 36px;
-        margin: 60px 40px;
+        margin: 150px 40px;
     }
 }
 
