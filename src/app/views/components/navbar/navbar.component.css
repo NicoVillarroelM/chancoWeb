@@ -1,4 +1,3 @@
-/* Estilos Generales */
 header {
   width: 90%;
   max-width: 1240px;
@@ -15,7 +14,6 @@ header {
   grid-gap: 20px;
 }
 
-/* Medidas Responsivas */
 @media (min-width: 30em) {
   .band {
     grid-template-columns: 1fr 1fr;
@@ -28,13 +26,74 @@ header {
   }
 }
 
-/* Estilos de Navegación */
-nav {
+.top-navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
   z-index: 1000;
+  font-size: 16px;
+}
+
+.top-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.top-navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.top-navbar-links a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #0056b3;
+  border-radius: 8px;
+}
+
+.top-navbar-links a span {
+  font-size: 12px;
+  color: #0056b3;
+}
+
+.top-navbar-contact a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+.top-navbar-social {
+  display: flex;
+  gap: 10px;
+}
+
+.top-navbar-social a {
+  color: #333;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.top-navbar-social a:hover {
+  color: #0056b3;
+}
+
+nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 900;
   background-color: rgba(18, 9, 7, 0.8);
   transition: background-color 0.3s ease;
 }
@@ -57,7 +116,6 @@ nav {
   object-fit: contain;
 }
 
-/* Estilos de Texto */
 .wrapper .logo {
   color: white;
   font-size: 30px;
@@ -65,7 +123,6 @@ nav {
   text-decoration: none;
 }
 
-/* Estilos de los enlaces de navegación */
 .nav-links {
   display: flex;
   list-style: none;
@@ -95,7 +152,6 @@ nav {
   transform: scale(1.05);
 }
 
-/* Botón de menú */
 .btn {
   display: none;
   background: none;
@@ -105,13 +161,6 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (max-width: 970px) {
-  .btn {
-    display: block;
-  }
-}
-
-/* Estilos del menú desplegable */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -147,8 +196,35 @@ nav {
   display: block;
 }
 
-/* Adaptar el menú desplegable al diseño móvil */
-@media screen and (max-width: 970px) {
+@media (max-width: 970px) {
+  .top-navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .top-navbar-links a {
+    font-size: 16px;
+  }
+
+  .top-navbar-contact a {
+    font-size: 16px;
+  }
+
+  .top-navbar-social a {
+    font-size: 20px;
+  }
+
+  nav {
+    top: 160px;
+    z-index: 1001;
+  }
+
+  .wrapper {
+    align-items: center;
+  }
+
   .nav-links {
     position: fixed;
     height: 100vh;
@@ -185,5 +261,11 @@ nav {
 
   .dropdown-content a:hover {
     background-color: var(--border-color);
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .btn {
+    display: block;
   }
 }

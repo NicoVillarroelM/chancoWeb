@@ -1,11 +1,32 @@
+<!-- Top Navbar -->
+<nav class="top-navbar">
+  <div class="top-navbar-container">
+    <div class="top-navbar-links">
+      <a href="https://www.portaltransparencia.cl/PortalPdT/pdtta?codOrganismo=MU037" target="_blank" class="top-nav-link">Transparencia Activa <br><span>Ley de Transparencia</span></a>
+      <a href="https://www.portaltransparencia.cl/PortalPdT/web/guest/directorio-de-organismos-regulados?p_p_id=pdtorganismos_WAR_pdtorganismosportlet&orgcode=75b85b2e3c2c61a0347a4ebf3f7cd850" target="_blank" class="top-nav-link">Solicitar Información <br><span>Ley de Transparencia</span></a>
+      <a href="https://www.leylobby.gob.cl/instituciones/MU037" target="_blank" class="top-nav-link">Plataforma <br><span>Ley del Lobby</span></a>
+    </div>
+    <div class="top-navbar-contact">
+      <a href="tel:73-2636600" class="top-nav-phone">Teléfonos Municipales <span>73-2636600</span></a>
+    </div>
+    <div class="top-navbar-social">
+      <a href="https://www.facebook.com/municipalidadchanco" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/munichanco/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:alcaldia@chanco.cl" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.youtube.com/user/chancocl" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Navbar -->
 <nav>
   <div class="wrapper">
     <div class="logo">
       <a href="/home"><img src="assets/images/chancoWeb.png" alt="Logo"></a>
     </div>
-    <a class="btn" (click)="toggleMenu()">
+    <button class="btn" (click)="toggleMenu()">
       <i class="fas fa-bars"></i>
-    </a>
+    </button>
     <ul class="nav-links" [ngClass]="{'show': menuVisible}">
       <li>
         <a class="nav-button" [routerLink]="'/home'" (click)="closeMenu()">
@@ -42,6 +63,6 @@
       <li>
         <a target="_blank" class="nav-button" [routerLink]="'/contact'" (click)="closeMenu()"><i class="fas fa-address-book"></i> Contacto</a>
       </li>
-    </ul> 
+    </ul>
   </div>
 </nav>

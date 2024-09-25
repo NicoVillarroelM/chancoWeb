@@ -13,12 +13,13 @@ import { PladecoComponent } from './views/components/pladeco/pladeco.component';
 import { AlcaldeComponent } from './views/components/alcalde/alcalde.component';
 import { FlowChartComponent } from './views/components/flow-chart/flow-chart.component';
 import { CouncilComponent } from './views/components/council/council.component';
-import { ContactComponent } from './views/components/contact/contact.component';
+import { TopNavComponent } from './views/components/top-nav/top-nav.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, NavbarComponent, NewsComponent,HistoryComponent, HomeComponent, PladecoComponent, CouncilComponent, FlowChartComponent, AlcaldeComponent , NgClass, FooterComponent],
+  imports: [RouterOutlet, RouterLink, NavbarComponent, NewsComponent,HistoryComponent, HomeComponent, PladecoComponent, CouncilComponent, FlowChartComponent, AlcaldeComponent,TopNavComponent , NgClass, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
